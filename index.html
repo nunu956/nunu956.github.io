@@ -146,6 +146,41 @@
               <p></p>
               <p>(1)Analytically and systematically evaluated the effectiveness of popular data augmentation methods used in deep 6D pose estimation. (2)From the view of geometric constrains, studied the impact of geometric transformations. (3)Further extended the thesis work by inventing  <a href="https://drive.google.com/file/d/13qOBEBD-pNH38C8EEbHDIfy227-wxAa3/view?usp=sharing">a homography-based data augmentation strategy</a>.
             </td>
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/drone.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/drone.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('ibrnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('ibrnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://drive.google.com/file/d/120PLtM-ixefLeExZBvUE9HyC5gBqpwff/view?usp=sharing">
+                <papertitle>Course Project: Model Based Design of Control System for Quadrocopter</papertitle>
+              </a>
+              <br>
+              <br> 
+              Coding Language & Library: MATLAB, C
+              <br>
+              Software and tools: Simulink, VSCode
+              <p></p>
+              <p>The Linear Quadratic Regulator (LQR) was designed for the quadrocopter based on a discrete linearization of the mathematical model which later was tuned from simulations. The final controller managed to stabilize the system and follow a reference angle of both zero and non-zero values. </p>
+            </td>
+          </tr>
+
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"> 
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -179,52 +214,6 @@
               <p>The Linear Quadratic Regulator (LQR) was designed for the quadrocopter based on a discrete linearization of the mathematical model which later was tuned from simulations. The final controller managed to stabilize the system and follow a reference angle of both zero and non-zero values. </p>
             </td>
           </tr> 
-
-          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/drone.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/drone.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function ibrnet_start() {
-                  document.getElementById('ibrnet_image').style.opacity = "1";
-                }
-
-                function ibrnet_stop() {
-                  document.getElementById('ibrnet_image').style.opacity = "0";
-                }
-                ibrnet_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ibrnet.github.io/">
-                <papertitle>IBRNet: Learning Multi-View Image-Based Rendering</papertitle>
-              </a>
-              <br>
-              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
-              <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/">Zhicheng Wang</a>,
-              <a href="https://www.kylegenova.com/">Kyle Genova</a>,
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
-              <a href="https://scholar.google.com/citations?user=Rh9T3EcAAAAJ&hl=en">Howard Zhou</a>, <br>
-              <strong>Jonathan T. Barron</strong>, 
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, 
-              <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>
-              <br>
-              <em>CVPR</em>, 2021
-              <br>
-              <a href="https://ibrnet.github.io/">project page</a> /
-              <a href="https://github.com/googleinterns/IBRNet">code</a> / 
-              <a href="https://arxiv.org/abs/2102.13090">arXiv</a>
-              <p></p>
-              <p>By learning how to pay attention to input images at render time, 
-                  we can amortize inference for view synthesis and reduce error rates by 15%.</p>
-            </td>
-          </tr>
 
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
