@@ -183,6 +183,65 @@
             </td>
 
 
+          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"> 
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+ <!--                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div> -->
+                <img src='images/direct.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Project for Fun: Direct Sparse Odometry</papertitle>
+              <br>
+              <br> 
+              Programming Language: C++
+              <br>
+              Software and Tools: Eigen, Sophus, Pangolin, g2o 
+              <p></p>
+              <p>Implemented bundle adjustment algorithm based on <a href="https://arxiv.org/pdf/1607.02565.pdf"> direct sparse odometry</a>. The main target was to minimize photometric errors among images. 
+              </p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/rviz.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rviz.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('ibrnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('ibrnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://drive.google.com/file/d/120PLtM-ixefLeExZBvUE9HyC5gBqpwff/view?usp=sharing">
+                <papertitle>Project for Fun: Localization and Mapping based on Multi-sensor Fusion</papertitle>
+              </a>
+              <br>
+              <br> 
+              Programming Language: C++
+              <br>
+              Software and Tools: ROS, Ceres, Pangolin, Eigen, Sophus 
+              <p></p>
+              <p>(1)This project was motivated by my current internship and previous knowlegde of sensor fusion course. The core algorithm development is still under going. (2)Sensors like LiDAR, IMU and camera would be considered. (3)The implementation is mainly evolved from state-of-the-art localization and mapping framework.</p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -248,31 +307,7 @@
               </p>
             </td>
           </tr> 
-
-
-
-          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"> 
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
- <!--                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div> -->
-                <img src='images/direct.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Project for Fun: Direct Sparse Odometry</papertitle>
-              <br>
-              <br> 
-              Programming Language: C++
-              <br>
-              Software and Tools: Eigen, Sophus, Pangolin, g2o 
-              <p></p>
-              <p>Implemented bundle adjustment algorithm based on <a href="https://arxiv.org/pdf/1607.02565.pdf"> direct sparse odometry</a>. The main target is to minimize photometric errors among images. 
-              </p>
-            </td>
-          </tr> 
+           
 
 
 <!-- 
